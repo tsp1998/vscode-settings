@@ -1,0 +1,79 @@
+{
+  "editor.suggestSelection": "first",
+  "editor.mouseWheelZoom": true,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 16,
+  "editor.wordBasedSuggestions": true,
+  "editor.fontFamily": "Operator Mono",
+  // "editor.fontFamily": "Operator Mono Lig",
+  // "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "Cascadia Code",
+  "editor.fontWeight": "100",
+  "editor.fontLigatures": true,
+  // "vscode_custom_css.imports": [
+    // "file:///C:/Users/shubham.tandale/Downloads/Fonts/style.css"
+  //   "file:///C:/Users/shubham.tandale/Downloads/Fonts/script.js"
+  // ],
+  // "vscode_custom_css.policy": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "[markdown]": {
+    "editor.quickSuggestions": true,
+    "editor.wordBasedSuggestions": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.tree.showScanModeButton": false,
+  "python.languageServer": "Microsoft",
+  "[scss]": {
+    "editor.defaultFormatter": "Wscats.eno"
+  },
+  "dashboard.projectData": null,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.columnSelection": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.cursorBlinking": "expand",
+  "editor.formatOnPaste": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "envKeys",
+        "scope": "string.quoted.double.env,source.env,constant.numeric.env",
+        "settings": {
+          "foreground": "#19354900"
+        }
+      }
+    ]
+  },
+  "markdown-preview-enhanced.liveUpdate": true,
+  "workbench.colorTheme": "Lightless Dark Theme"
+}

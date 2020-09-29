@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+alt+n", // "cmd+n" on mac
+    "command": "extension.advancedNewFile",
+  },
+  {
+    "key": "ctrl+l",
+    "command": "expandLineSelection"
+  }
+]
