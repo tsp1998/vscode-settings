@@ -3,14 +3,15 @@
   "editor.mouseWheelZoom": true,
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.wordBasedSuggestions": true,
   "editor.fontFamily": "Operator Mono",
   // "editor.fontFamily": "Operator Mono Lig",
   // "editor.fontFamily": "Fira Code",
   // "editor.fontFamily": "Cascadia Code",
-  "editor.fontWeight": "100",
+  "editor.fontWeight": "500",
   "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
   // "vscode_custom_css.imports": [
     // "file:///C:/Users/shubham.tandale/Downloads/Fonts/style.css"
   //   "file:///C:/Users/shubham.tandale/Downloads/Fonts/script.js"
@@ -64,16 +65,12 @@
   "editor.cursorBlinking": "expand",
   "editor.formatOnPaste": true,
   "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "name": "envKeys",
-        "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-        "settings": {
-          "foreground": "#19354900"
-        }
-      }
-    ]
+    "textMateRules": []
   },
   "markdown-preview-enhanced.liveUpdate": true,
-  "workbench.colorTheme": "Lightless Dark Theme"
+  "workbench.colorTheme": "Cobalt",
+  "colorHelper.disableTransparent": true,
+  "terminal.integrated.fontSize": 15,
+  "C_Cpp.updateChannel": "Insiders",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 }
