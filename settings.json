@@ -2,12 +2,12 @@
   "editor.suggestSelection": "first",
   "editor.mouseWheelZoom": true,
   "editor.tabSize": 2,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "editor.fontSize": 14,
   "editor.wordBasedSuggestions": true,
   "editor.fontFamily": "Operator Mono",
   // "editor.fontFamily": "Operator Mono Lig",
-  // "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Fira Code",
   // "editor.fontFamily": "Cascadia Code",
   // "editor.fontFamily": "DejaVu Sans Mono",
   // "editor.fontFamily": "Source Code Pro",
@@ -22,8 +22,8 @@
   // "editor.fontFamily": "Menlo",
   // "editor.fontFamily": "Space Mono",
   // "editor.fontFamily": "IBM 3270 Semi",
-  "editor.fontFamily": "Droid Sans Mono",
-  "editor.fontWeight": "500",
+  // "editor.fontFamily": "Droid Sans Mono",
+  "editor.fontWeight": "400",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "terminal.integrated.fontSize": 16,
@@ -33,6 +33,8 @@
   "terminal.integrated.fontFamily": "Fira Code",
   // "terminal.integrated.fontFamily": "Cascadia Code",
   "terminal.integrated.fontWeight": "300",
+  "debug.console.fontFamily": "Ubuntu Mono",
+  "debug.console.fontSize": 20,
   // "vscode_custom_css.imports": [
     // "file:///C:/Users/shubham.tandale/Downloads/Fonts/style.css"
   //   "file:///C:/Users/shubham.tandale/Downloads/Fonts/script.js"
@@ -75,11 +77,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "todo-tree.tree.showScanModeButton": false,
-  "python.languageServer": "Microsoft",
   "[scss]": {
     "editor.defaultFormatter": "Wscats.eno"
   },
-  "dashboard.projectData": null,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.columnSelection": false,
   "workbench.iconTheme": "material-icon-theme",
@@ -88,11 +88,10 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": []
   },
-  "markdown-preview-enhanced.liveUpdate": true,
   "colorHelper.disableTransparent": true,
-  "C_Cpp.updateChannel": "Insiders",
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "workbench.editor.showTabs": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "LaserWave"
+  "workbench.colorTheme": "SynthWave '84",
+  // "editor.formatOnSave": true
 }

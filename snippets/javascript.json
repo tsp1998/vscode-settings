@@ -12,21 +12,4 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"contMethod": {
-		"prefix": "contMethod",
-		"body": [
-			"exports.$1 = async (req, res, next) => {",
-			"\ttry {",
-			"\t\tconst query = {};"
-			"\t\t$2",
-			"\t\tif (!$3) throw new Error($4);",
-			"\t\telse {",
-			"\t\t\treturn res.json({ status: 'success', $5});",
-			"\t\t}",
-			"\t} catch (error) {",
-			"\t\treturn next(error);",
-			"\t}",
-			"};"
-		]
-	}
 }

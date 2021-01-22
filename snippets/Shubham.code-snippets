@@ -15,11 +15,55 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"const destructure": {
+		"prefix": "condes",
+		"body": ["const { $2 } = $1;"]
+	},
+	"let destructure": {
+		"prefix": "letdes",
+		"body": ["let { $2 } = $1;"]
+	},
+	"style-component": {
+		"prefix": "safce",
+		"body": [
+			"import React from 'react'\n",
+			"//styles",
+			"import styled from 'styled-components'",
+			"const $1Styled = styled.div`",
+			"\t",
+			"`\n",
+			"const $1 = () => {",
+			"\treturn (",
+			"\t\t<$1Styled>",
+			"\t\t\t$2",
+			"\t\t</$1Styled>",
+			"\t)",
+			"}\n",
+			"export default $1"
+		]
+	},
 	"moduleExport" : {
 		"body": [
 			"module.exports = $1"
 		],
 		"prefix": "mexp"
+	},
+	"controllerMethod": {
+		"prefix": "contMethod",
+		"body": [
+			"exports.$1 = async (req, res, next) => {",
+			"\ttry {",
+			"\t\tconst query = {};"
+			"\t\t$2",
+			"\t\tif (!$3) throw new Error($4);",
+			"\t\telse {",
+			"\t\t\treturn res.json({ status: 'success', $5});",
+			"\t\t}",
+			"\t} catch (error) {",
+			"\t\treturn next(error);",
+			"\t}",
+			"};"
+		]
 	},
 	"require" : {
 		"body": [
