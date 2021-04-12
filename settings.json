@@ -2,10 +2,9 @@
   "editor.suggestSelection": "first",
   "editor.mouseWheelZoom": true,
   "editor.tabSize": 2,
-  "window.zoomLevel": 0,
   "editor.fontSize": 14,
   "editor.wordBasedSuggestions": true,
-  "editor.fontFamily": "Operator Mono",
+  // "editor.fontFamily": "Operator Mono",
   // "editor.fontFamily": "Operator Mono Lig",
   "editor.fontFamily": "Fira Code",
   // "editor.fontFamily": "Cascadia Code",
@@ -92,6 +91,9 @@
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "workbench.editor.showTabs": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "SynthWave '84",
+  "material-icon-theme.folders.theme": "specific",
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
+  "git.enableSmartCommit": true,
   // "editor.formatOnSave": true
 }

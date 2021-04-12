@@ -53,7 +53,7 @@
 		"body": [
 			"exports.$1 = async (req, res, next) => {",
 			"\ttry {",
-			"\t\tconst query = {};"
+			"\t\tconst query = {};",
 			"\t\t$2",
 			"\t\tif (!$3) throw new Error($4);",
 			"\t\telse {",
@@ -87,6 +87,14 @@
 		"body": ["import styled from 'styled-components'"],
 		"prefix": "imsc"
 	},
+	"styledCompNamedImport" : {
+		"body": ["import { $1 } from 'styled-components'"],
+		"prefix": "imsd"
+	},
+	"styledCompWithNamedImport" : {
+		"body": ["import styled, { $1 } from 'styled-components'"],
+		"prefix": "imscd"
+	},
 	"styledComp" : {
 		"body": [
 			"const $1 = styled$2`",
@@ -96,7 +104,7 @@
 		"prefix": "sc"
 	},
 	"styledCompProp" : {
-		"body": "${({$1}) => ($2)}",
+		"body": "${({$1}) => $2}",
 		"prefix": "scp"
 	},
 	"jsFunction" : {
@@ -146,5 +154,34 @@
 			"\t$1",
 			"}"
 		]
+	},
+	"routerSnippet": {
+		"prefix": "routerSnippet",
+		"body": [
+			"const express = require('express');",
+			"const router = express.Router();\n",
+			"\t$1\n",
+			"module.exports = router;"
+		]
+	},
+	"reqres": {
+		"prefix": "reqres",
+		"body": [
+			"(req, res) => {",
+			"\t$1",
+			"}"
+		]
+	},
+	"reqresnext": {
+		"prefix": "reqresnext",
+		"body": [
+			"(req, res, next) => {",
+			"\t$1",
+			"}"
+		]
+	},
+	"export const": {
+		"prefix": "expc",
+		"body": "export const "
 	}
 }
