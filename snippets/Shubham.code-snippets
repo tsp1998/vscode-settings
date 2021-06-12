@@ -15,6 +15,15 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	// Javascript
+	"consoleLog": {
+		"prefix": ["clg"],
+		"body": "console.log(${1:object})"
+	},
+	"consoleLogObject": {
+		"prefix": "clo",
+		"body": "console.log(`${1:object}`, ${1:object})"
+	},
 	"const destructure": {
 		"prefix": "condes",
 		"body": ["const { $2 } = $1;"]
@@ -23,6 +32,13 @@
 		"prefix": "letdes",
 		"body": ["let { $2 } = $1;"]
 	},
+	"jsGetById":{
+		"prefix": "dgi",
+		"body": "document.getElementById('$1')"
+	},
+	// Javascript
+
+	//react, styled components, babel, redux
 	"style-component": {
 		"prefix": "safce",
 		"body": [
@@ -42,6 +58,45 @@
 			"export default $1"
 		]
 	},
+	"styledCompImport" : {
+		"body": ["import styled from 'styled-components'"],
+		"prefix": "imsc"
+	},
+	"styledCompNamedImport" : {
+		"body": ["import { $1 } from 'styled-components'"],
+		"prefix": "imsd"
+	},
+	"styledCompWithNamedImport" : {
+		"body": ["import styled, { $1 } from 'styled-components'"],
+		"prefix": "imscd"
+	},
+	"styledComp" : {
+		"body": [
+			"const $1 = styled$2`",
+			"\t$3",
+			"`"
+		],
+		"prefix": "sc"
+	},
+	"styledCompProp" : {
+		"body": "${({$1}) => $2}",
+		"prefix": "scp"
+	},
+	"jsFunction" : {
+		"prefix": "fun",
+		"body": [
+			"function $1(params) {",
+			"\t$2",
+			"}"
+		]
+	},
+	"export const": {
+		"prefix": "expc",
+		"body": "export const "
+	},
+	//react
+
+	//node
 	"moduleExport" : {
 		"body": [
 			"module.exports = $1"
@@ -83,42 +138,50 @@
 		],
 		"prefix": "rqd"
 	},
-	"styledCompImport" : {
-		"body": ["import styled from 'styled-components'"],
-		"prefix": "imsc"
-	},
-	"styledCompNamedImport" : {
-		"body": ["import { $1 } from 'styled-components'"],
-		"prefix": "imsd"
-	},
-	"styledCompWithNamedImport" : {
-		"body": ["import styled, { $1 } from 'styled-components'"],
-		"prefix": "imscd"
-	},
-	"styledComp" : {
+	"routerSnippet": {
+		"prefix": "routerSnippet",
 		"body": [
-			"const $1 = styled$2`",
-			"\t$3",
-			"`"
-		],
-		"prefix": "sc"
+			"const express = require('express');",
+			"const router = express.Router();\n",
+			"\t$1\n",
+			"module.exports = router;"
+		]
 	},
-	"styledCompProp" : {
-		"body": "${({$1}) => $2}",
-		"prefix": "scp"
-	},
-	"jsFunction" : {
-		"prefix": "fun",
+	"reqres": {
+		"prefix": "reqres",
 		"body": [
-			"function $1(params) {",
-			"\t$2",
+			"(req, res) => {",
+			"\t$1",
 			"}"
 		]
 	},
-	"jsGetById":{
-		"prefix": "dgi",
-		"body": "document.getElementById('$1')"
+	"reqresnext": {
+		"prefix": "reqresnext",
+		"body": [
+			"(req, res, next) => {",
+			"\t$1",
+			"}"
+		]
 	},
+	"expressapp": {
+		"prefix": "expressapp",
+		"body": [
+			"const express = require('express')",
+			"const app = express();",
+			"const PORT = process.env.PORT || ${1:8080};\n",
+			"app.get('/', (req, res) => {",
+			"  res.send('${2:Welcome to Express App}');",
+			"})\n",
+			"app.listen(PORT, err => {",
+			"  if (err) return console.log(`Error: `, err);",
+			"  console.log(`App is listening on PORT \\${PORT}`);",
+			"})"
+		]
+	},
+	//node
+	
+	
+	//css
 	"mediaPhone":{
 		"prefix": "mp",
 		"body": [
@@ -155,33 +218,5 @@
 			"}"
 		]
 	},
-	"routerSnippet": {
-		"prefix": "routerSnippet",
-		"body": [
-			"const express = require('express');",
-			"const router = express.Router();\n",
-			"\t$1\n",
-			"module.exports = router;"
-		]
-	},
-	"reqres": {
-		"prefix": "reqres",
-		"body": [
-			"(req, res) => {",
-			"\t$1",
-			"}"
-		]
-	},
-	"reqresnext": {
-		"prefix": "reqresnext",
-		"body": [
-			"(req, res, next) => {",
-			"\t$1",
-			"}"
-		]
-	},
-	"export const": {
-		"prefix": "expc",
-		"body": "export const "
-	}
+	//css
 }
