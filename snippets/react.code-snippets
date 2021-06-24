@@ -1,0 +1,51 @@
+{
+	"style-component": {
+		"prefix": "safce",
+		"body": [
+			"import React from 'react'\n",
+			"//styles",
+			"import styled from 'styled-components'",
+			"const $1Styled = styled.div`",
+			"\t",
+			"`\n",
+			"const $1 = () => {",
+			"\treturn (",
+			"\t\t<$1Styled>",
+			"\t\t\t$2",
+			"\t\t</$1Styled>",
+			"\t)",
+			"}\n",
+			"export default $1"
+		]
+	},
+	"styledCompImport": {
+		"body": [
+			"import styled from 'styled-components'"
+		],
+		"prefix": "imsc"
+	},
+	"styledCompNamedImport": {
+		"body": [
+			"import { $1 } from 'styled-components'"
+		],
+		"prefix": "imsd"
+	},
+	"styledCompWithNamedImport": {
+		"body": [
+			"import styled, { $1 } from 'styled-components'"
+		],
+		"prefix": "imscd"
+	},
+	"styledComp": {
+		"body": [
+			"const $1 = styled$2`",
+			"\t$3",
+			"`"
+		],
+		"prefix": "sc"
+	},
+	"styledCompProp": {
+		"body": "${({$1}) => $2}",
+		"prefix": "scp"
+	}
+}

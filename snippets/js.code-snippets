@@ -1,0 +1,47 @@
+{
+	"consoleLog": {
+		"prefix": [
+			"clg"
+		],
+		"body": "console.log(${1:object})"
+	},
+	"consoleLogObject": {
+		"prefix": "clo",
+		"body": "console.log(`${1:object}`, ${1:object})"
+	},
+	"jsFunction": {
+		"prefix": "fun",
+		"body": [
+			"function $1(params) {",
+			"\t$2",
+			"}"
+		]
+	},
+	"const destructure": {
+		"prefix": "condes",
+		"body": [
+			"const { $2 } = $1;"
+		]
+	},
+	"let destructure": {
+		"prefix": "letdes",
+		"body": [
+			"let { $2 } = $1;"
+		]
+	},
+	"jsGetById": {
+		"prefix": "dgi",
+		"body": "document.getElementById('$1')"
+	},
+	"promise": {
+		"prefix": [
+			"promise",
+			"newPromise"
+		],
+		"body": [
+			"new Promise((resolve, reject) => {",
+			"\t$1",
+			"})"
+		]
+	}
+}

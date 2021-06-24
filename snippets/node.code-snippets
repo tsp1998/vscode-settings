@@ -1,0 +1,83 @@
+{
+  "moduleExport": {
+    "body": [
+      "module.exports = $1"
+    ],
+    "prefix": "mexp"
+  },
+  "controllerMethod": {
+    "prefix": "contMethod",
+    "body": [
+      "exports.$1 = async (req, res, next) => {",
+      "\ttry {",
+      "\t\tconst query = {};",
+      "\t\t$2",
+      "\t\tif (!$3) throw new Error($4);",
+      "\t\telse {",
+      "\t\t\treturn res.json({ status: 'success', $5});",
+      "\t\t}",
+      "\t} catch (error) {",
+      "\t\treturn next(error);",
+      "\t}",
+      "};"
+    ]
+  },
+  "require": {
+    "body": [
+      "require('$1')"
+    ],
+    "prefix": "rq"
+  },
+  "require-default": {
+    "body": [
+      "const ${2:name} = require('$1')"
+    ],
+    "prefix": "rqp"
+  },
+  "require-named": {
+    "body": [
+      "const { $2 } = require('$1')"
+    ],
+    "prefix": "rqd"
+  },
+  "routerSnippet": {
+    "prefix": "routerSnippet",
+    "body": [
+      "const express = require('express');",
+      "const router = express.Router();\n",
+      "\t$1\n",
+      "module.exports = router;"
+    ]
+  },
+  "reqres": {
+    "prefix": "reqres",
+    "body": [
+      "(req, res) => {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "reqresnext": {
+    "prefix": "reqresnext",
+    "body": [
+      "(req, res, next) => {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "expressapp": {
+    "prefix": "expressapp",
+    "body": [
+      "const express = require('express')",
+      "const app = express();",
+      "const PORT = process.env.PORT || ${1:8080};\n",
+      "app.get('/', (req, res) => {",
+      "  res.send('${2:Welcome to Express App}');",
+      "})\n",
+      "app.listen(PORT, err => {",
+      "  if (err) return console.log(`Error: `, err);",
+      "  console.log(`App is listening on PORT \\${PORT}`);",
+      "})"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"import": {
+		"prefix": "im",
+		"body": "import '${1:module}'"
+	},
+	"import module": {
+		"prefix": "imp",
+		"body": "import ${2:moduleName} from '${1:module}'"
+	},
+	"import named modules": {
+		"prefix": "imd",
+		"body": "import { $2 } from '${1:module}'"
+	},
+	"export": {
+		"prefix": "ex",
+		"body": "export "
+	},
+	"export default module": {
+		"prefix": "exp",
+		"body": "export default "
+	},
+	"export const": {
+		"prefix": "expc",
+		"body": "export const "
+	},
+	"import react": {
+		"prefix": "imr",
+		"body": "import React from 'react'"
+	}
+}

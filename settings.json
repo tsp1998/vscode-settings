@@ -73,7 +73,7 @@
     "editor.wordBasedSuggestions": true
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "todo-tree.tree.showScanModeButton": false,
   "[scss]": {
@@ -107,6 +107,6 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "workbench.colorTheme": "Midnight Synth",
+  "workbench.colorTheme": "Winter is Coming (Light - No Italics)",
   "tabnine.experimentalAutoImports": true
 }

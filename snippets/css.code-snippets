@@ -1,0 +1,38 @@
+{
+  "mediaPhone": {
+    "prefix": "mp",
+    "body": [
+      "@media only screen and (max-width: 37.5em) {",
+      "\t/* phone //600px */",
+      "\t$1",
+      "}"
+    ]
+  },
+  "mediaTab": {
+    "prefix": "mt",
+    "body": [
+      "@media only screen and (max-width: 56.25em) {",
+      "\t/* phone //900px */",
+      "\t$1",
+      "}"
+    ]
+  },
+  "mediaTabLand": {
+    "prefix": "mtl",
+    "body": [
+      "@media only screen and (max-width: 75em) {",
+      "\t/* phone //1200px */",
+      "\t$1",
+      "}"
+    ]
+  },
+  "mediaDesktop": {
+    "prefix": "md",
+    "body": [
+      "@media only screen and (min-width: 112.5em) {",
+      "\t/* phone //1800 */",
+      "\t$1",
+      "}"
+    ]
+  }
+}
