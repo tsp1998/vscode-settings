@@ -4,9 +4,9 @@
   "editor.tabSize": 2,
   "editor.fontSize": 14,
   "editor.wordBasedSuggestions": true,
-  // "editor.fontFamily": "Operator Mono",
+  "editor.fontFamily": "Operator Mono",
   // "editor.fontFamily": "Operator Mono Lig",
-  "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "Fira Code",
   // "editor.fontFamily": "Cascadia Code",
   // "editor.fontFamily": "DejaVu Sans Mono",
   // "editor.fontFamily": "Source Code Pro",
@@ -93,7 +93,20 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.folders.theme": "specific",
   "window.zoomLevel": -1,
-  "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
   "git.enableSmartCommit": true,
   // "editor.formatOnSave": true
+  "coverage-gutters.xmlname": "D:\\Qualitia Repo\\engine\\Recorder\\Extension\\test\\unit\\coverage\\cobertura-coverage.xml",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.colorTheme": "Midnight Synth",
+  "tabnine.experimentalAutoImports": true
 }
