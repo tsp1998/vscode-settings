@@ -26,5 +26,17 @@
 	"import react": {
 		"prefix": "imr",
 		"body": "import React from 'react'"
+	},
+	"method": {
+		"prefix": "met",
+		"body": "${1:methodName} = (${2:params}) => {$3}"
+	},
+	"destructure object": {
+		"prefix": "dob",
+		"body": "const { ${2:propName} } = ${1:objectToDescruct}"
+	},
+	"destructure array": {
+		"prefix": "dar",
+		"body": "const [${2:propName}] = ${1:arrayToDescruct}"
 	}
 }

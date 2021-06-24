@@ -1,4 +1,134 @@
 {
+	"cdm": {
+		"prefix": "cdm",
+		"body": "componentDidMount = () => {$1}"
+	},
+	"ren": {
+		"prefix": "ren",
+		"body": [
+			"render() {",
+			"\treturn($1) ",
+			"}"
+		]
+	},
+	"sst": {
+		"prefix": "sst",
+		"body": "this.setState({ $1 })"
+	},
+	"ssf": {
+		"prefix": "ssf",
+		"body": "this.setState((state, props) => {$1})"
+	},
+	"props": {
+		"prefix": "props",
+		"body": "this.props.${1:propName}"
+	},
+	"state": {
+		"prefix": "state",
+		"body": "this.state.${1:stateName}"
+	},
+	"functional component": {
+		"prefix": "rafce",
+		"body": [
+			"function ${1:ComponentName}() {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$2",
+			"\t\t</div>",
+			"\t)",
+			"}",
+			"\nexport default ${1:ComponentName}",
+		]
+	},
+	"functional component (arrow)": {
+		"prefix": "rafce",
+		"body": [
+			"const ${1:ComponentName} = () => {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$2",
+			"\t\t</div>",
+			"\t)",
+			"}",
+			"\nexport default ${1:ComponentName}"
+		]
+	},
+	"functional component (named export arrow)": {
+		"prefix": "rafc",
+		"body": [
+			"export const ${1:ComponentName} = () => {",
+			"\treturn <div>$0</div>",
+			"}",
+		]
+	},
+	"functional component (named + default export arrow with redux)": {
+		"prefix": "rfcredux",
+		"body": [
+			"import { connect } from 'react-redux'",
+			"\nexport const ${1:ComponentName} = () => {",
+			"\treturn <div>$2</div>",
+			"}",
+			"\nconst mapStateToProps = (state) => ({})",
+			"\nconst mapDispatchToProps = {}",
+			"\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:ComponentName})",
+		]
+	},
+	"functional component (named + default export arrow with redux)": {
+		"prefix": "stest",
+		"body": [
+			"import renderer from 'react-test-renderer'",
+			"\nimport ${1:ComponentName} from '../${1:ComponentName}'",
+			"describe('<${1:ComponentName} />', () => {",
+			"\tconst defaultProps = {}",
+			"\tconst wrapper = renderer.create(<${1:ComponentName} { ...defaultProps } />)",
+			"\ttest('render', () => {",
+			"\t\texpect(wrapper).toMatchSnapshot()",
+			"\t})",
+			"})",
+		]
+	},
+	"class component (named + default export)": {
+		"prefix": "rce",
+		"body": [
+			"import { Component } from 'react'",
+			"\nexport class ${1:ComponentName} extends Component {",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$2",
+			"\t\t\t</div>",
+			"\t\t)",
+			"\t}",
+			"}",
+			"\nexport default ${1:ComponentName}",
+		]
+	},
+	"class component (default export)": {
+		"prefix": "rcc",
+		"body": [
+			"import { Component } from 'react'",
+			"\nexport default class ${1:ComponentName} extends Component {",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$2",
+			"\t\t\t</div>",
+			"\t\t)",
+			"\t}",
+			"}"
+		]
+	},
+	"redux mapState and mapDispatch": {
+		"prefix": "reduxmap",
+		"body": [
+			"const mapStateToProps = (state) => ({",
+			"\t$1",
+			"})",
+			"\nconst mapDispatchToProps = {",
+			"\t$2",
+			"}",
+		]
+	},
 	"style-component": {
 		"prefix": "safce",
 		"body": [

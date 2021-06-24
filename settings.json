@@ -107,6 +107,6 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "workbench.colorTheme": "Winter is Coming (Light - No Italics)",
+  "workbench.colorTheme": "Vue Theme",
   "tabnine.experimentalAutoImports": true
 }

@@ -43,5 +43,13 @@
 			"\t$1",
 			"})"
 		]
-	}
+	},
+	"sti": {
+		"prefix": "sti",
+		"body": "setInterval(() => {$3}, ${1:intervalTime})"
+	},
+	"sto": {
+		"prefix": "sto",
+		"body": "setTimeout(() => {$2}, ${1:delayTime})"
+	},
 }
